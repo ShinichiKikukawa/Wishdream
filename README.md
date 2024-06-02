@@ -1,27 +1,8 @@
 # README
+説明文 このベースアプリは、Rails 7系で作成されています。Webpacker、Turbo、Turbolinksは使用しない方針です。また、Importmapも使用せず、Rails 5系のシンプルな仕様を基礎にしています。あえてアセットパイプラインのシンプルな仕様を採用しています。  そもそも、TurboやTurbolinks、Importmapのような独自路線には付き合わず、将来的にはReactやVue.jsでAPI開発を最初から視野に入れています。最強のORマッパーであるRailsのActiveRecordを使えるメリットのみを最大限享受しようという考え方であえてやっています。主に、トイアプリを即日作る目的で早さ全振りでベースアプリを作ってみました。
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+ローカル環境でも、docker環境でも、簡単な切り替えで対応できます。以下に簡単に記載します。
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
 
 
 以下にdocker環境用でのdatabase．ymlの記述を記載します。
