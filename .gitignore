@@ -1,0 +1,44 @@
+# .gitignore
+# 詳細については、https://help.github.com/articles/ignoring-files を参照してください。
+#
+# テキストエディタやオペレーティングシステムによって生成される一時ファイルを無視する場合、
+# グローバルなignoreファイルを追加することを検討してください：
+#   git config --global core.excludesfile '~/.gitignore_global'
+
+# Bundlerの設定ファイルを無視します。
+/.bundle
+
+# 環境変数ファイルを無視します（テンプレートファイルは除く）。
+/.env*
+!/.env*.erb
+
+# ログファイルと一時ファイルを無視します。
+/log/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
+
+# PIDファイルを無視しますが、ディレクトリ自体は保持します。
+/tmp/pids/*
+!/tmp/pids/
+!/tmp/pids/.keep
+
+# ストレージディレクトリ内のファイルを無視しますが、ディレクトリ自体は保持します。
+/storage/*
+!/storage/.keep
+/tmp/storage/*
+!/tmp/storage/
+!/tmp/storage/.keep
+
+# 公開アセット（コンパイルされたファイル）を無視します。
+/public/assets
+/public/packs
+
+# Node.jsの依存関係ディレクトリを無視します。
+/node_modules
+
+# Railsの資格情報のマスターキーを無視します。
+/config/master.key
+
+# Railsの資格情報ファイルを無視します。
+/config/credentials.yml.enc
